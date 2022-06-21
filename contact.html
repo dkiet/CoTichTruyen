@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Truyện Cổ Tích</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="text/css" href="img/favion.jpg">
+</head>
+<body>
+	<div style="background-color: #F1EFE9">
+		<a onclick="window.location.href='index.html'"><img src="img/logo.png" style="width: 70px; height: 50px;"></a>
+
+		<div class="dropdown">
+			<button onclick="gotoCoTichVietNam()">Cổ Tích Việt Nam</button>
+			<div class="dropdown-content">
+	    		<ol>
+	    			<button onclick="gotoCoTichVeLoaiVat()">Cổ Tích Về Loài Vật</button>
+	    		</ol>
+	    		<ol>
+	    			<button onclick="gotoCoTichThanKy()">Cổ Tích Thần Kỳ</button>
+	    		</ol>
+	    		<ol>
+	    			<button onclick="gotoCoTichTheTuc()">Cổ Tích Thế Tục</button>
+	    		</ol>
+			</div>
+		</div>
+	
+	
+		<div class = "dropdown">
+			<button onclick="gotoCoTichTheGioi()">Cổ Tích Thế Giới</button>
+			<div class = "dropdown-content">
+				<ol>
+					<button onclick="gotoTruyenCoGrimm()">Truyện Cổ Grimm</button>
+				</ol>
+				<ol>
+					<button onclick="gotoTruyenCoAndersen()">Truyện Cổ Andersen</button>
+				</ol>
+				<ol>
+					<button onclick="gotoThanThoaiHyLap()">Thần Thoại Hy Lạp</button>
+				</ol>
+			</div>
+		</div>
+	
+		<button onclick="gotoTruyenCuoi()">Truyện Cười</button>
+		<button onclick="gotoTruyenNguNgon()">Truyện Ngụ Ngôn</button>
+		<button onclick="gotoTruyenDanGian()">Truyện Dân Gian</button>
+		<button onclick="window.location.href='contact.html'">Liên Hệ</button>
+	</div>
+
+	<div id = "booksList"></div>
+	<div id = "pagesList"></div>
+
+	<p id="nameSchool">Học Viện VTC Academy Hồ Chí Minh</p>
+
+	<a href="https://www.google.com/maps/place/The+Emporium/@10.7647319,106.6556001,15z/data=!4m5!3m4!1s0x0:0x4b2ac9e9bd4e53ba!8m2!3d10.7647367!4d106.6556075" target="_blank">
+		<p id="addressSchool">Tầng thứ 2 - Toà nhà Emporium Tower, 184 Lê Đại Hành, Đường 15, Quận 11, Thành Phố Hồ Chí Minh</p>
+	</a>
+
+	<p>Hotline: 0818 779 299 - (028) 62 55 62 62</p>
+	<p>Email: infor@vtc.edu.vn</p>
+	<span>FaceBook:</span>
+	<a href="https://www.facebook.com/VtcAcademyofficial" target="_blank">
+		<span>VTC Academy TP.HCM</span>
+	</a>
+
+	<p>Founder</p>
+	<p>Lê Gia An</p>
+	<p>Phan Văn Đế</p>
+	<p>Dương Văn Kiệt</p>
+
+	<p>Contact Us</p>
+
+	<p>HoChiMinh, VietNamese</p>
+	<p>Phone: +84 386 734 177</p>
+	<p>Email: dkiet742@gmail.com</p>
+
+	<p>HoChiMinh, VietNamese</p>
+	<p>Phone: 097 461 92 80</p>
+	<p>Email: phanvande8726.vn.com</p>
+
+	<p>HoChiMinh, VietNamese</p>
+	<p>Phone: 096 410 95 79</p>
+	<p>Email: andoycle@gmail.com</p>
+
+
+	<script type="text/javascript">
+		window.location.href = "contact.html";
+
+		canActivate(
+				route: ActivatedRouteSnapshot,
+			): boolean {
+				const accessToken = this.store.selectSnapshot(AuthState.accessToken);
+
+				if (!accessToken) {
+					this.store.dispatch(new Navigate(['/identity/login']));
+				return false;
+				}
+				return true;
+			}
+	</script>
+
+	<script src = "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src = "js/function.js"></script>
+	<script type="text/javascript" src = "js/storyData.js"></script>
+</body>
+</html>

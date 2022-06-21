@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Truyện Cổ Tích</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="text/css" href="img/favion.jpg">
+</head>
+<body>
+	<div style="background-color: #F1EFE9">
+		<a onclick="window.location.href='index.html'"><img src="img/logo.png" style="width: 70px; height: 50px;"></a>
+
+		<div class="dropdown">
+			<button onclick="gotoCoTichVietNam()">Cổ Tích Việt Nam</button>
+			<div class="dropdown-content">
+	    		<ol>
+	    			<button onclick="gotoCoTichVeLoaiVat()">Cổ Tích Về Loài Vật</button>
+	    		</ol>
+	    		<ol>
+	    			<button onclick="gotoCoTichThanKy()">Cổ Tích Thần Kỳ</button>
+	    		</ol>
+	    		<ol>
+	    			<button onclick="gotoCoTichTheTuc()">Cổ Tích Thế Tục</button>
+	    		</ol>
+			</div>
+		</div>
+	
+	
+		<div class = "dropdown">
+			<button onclick="gotoCoTichTheGioi()">Cổ Tích Thế Giới</button>
+			<div class = "dropdown-content">
+				<ol>
+					<button onclick="gotoTruyenCoGrimm()">Truyện Cổ Grimm</button>
+				</ol>
+				<ol>
+					<button onclick="gotoTruyenCoAndersen()">Truyện Cổ Andersen</button>
+				</ol>
+				<ol>
+					<button onclick="gotoThanThoaiHyLap()">Thần Thoại Hy Lạp</button>
+				</ol>
+			</div>
+		</div>
+	
+		<button onclick="gotoTruyenCuoi()">Truyện Cười</button>
+		<button onclick="gotoTruyenNguNgon()">Truyện Ngụ Ngôn</button>
+		<button onclick="gotoTruyenDanGian()">Truyện Dân Gian</button>
+		<button onclick="window.location.href='contact.html'">Liên Hệ</button>
+	</div>
+		
+	<div id = "booksList"></div>
+	<div id = "pagesList"></div>
+
+	<script src = "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src = "js/function.js"></script>
+	<script type="text/javascript" src = "js/storyData.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

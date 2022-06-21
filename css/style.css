@@ -1,0 +1,77 @@
+body {
+  background-color: #F1EFE9;
+}
+
+
+button {
+  padding: 7px 27px 7px 26px;
+  font-family: roboto;
+  font-size: 16px;
+  border: none;
+  background-color: #F1EFE9;
+  border-radius: 20px;
+}
+
+button:hover, button.click {
+  background-color: red;
+  color: yellow;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #38444D;
+  padding: 12px 16px;
+  z-index: 2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#storiesData {
+  font-size: 123px;
+}
+
+#imgMain {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#top {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 239, 233);
+}
+
+#logo {
+    width: 70px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
